@@ -1,0 +1,11 @@
+{
+    "Id": "1",
+    "Identificador": "Contrato001",
+    "Valor": 1500000.75,
+    "nombre_contratante": "Juan Pérez",
+    "documento_contratante": "123456789",
+    "nombre_contratantista": "Ana Gómez",
+    "documento_contratantista": "987654321",
+    "fecha_inicial": "2025-03-01",
+    "fecha_final": "2025-12-31"
+  }

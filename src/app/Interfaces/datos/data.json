@@ -1,11 +1,16 @@
 {
-    "Id": "1",
-    "Identificador": "Contrato001",
-    "Valor": 1500000.75,
-    "nombre_contratante": "Juan Pérez",
-    "documento_contratante": "123456789",
-    "nombre_contratantista": "Ana Gómez",
-    "documento_contratantista": "987654321",
-    "fecha_inicial": "2025-03-01",
-    "fecha_final": "2025-12-31"
-  }
+  "contratos": [
+    {
+      "id": "77c7",
+      "ID": 1,
+      "Identificador": "Contrato001",
+      "Valor": 24564563475,
+      "nombre_contratante": "desarrollo economico",
+      "documento_contratante": "12345678",
+      "nombre_contratantista": "Ana Gómez",
+      "documento_contratantista": "12334885599",
+      "fecha_inicial": "2025-03-05",
+      "fecha_final": "2026-06-26"
+    }
+  ]
+}

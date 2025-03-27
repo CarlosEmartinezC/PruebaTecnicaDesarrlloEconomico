@@ -1,28 +1,28 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Contrato, NuevoContrato } from './Interfaces/data-interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataServiceService {
-  private filePath = 'nombre-del-proyecto/src/app/Interfaces/datos/data.json'; // Ruta del archivo JSON
+  private filePath = 'http://localhost:3000/contratos' // Ruta del archivo JSON
 
   constructor(private http: HttpClient) {}
 
-  // Insertar contrato - Esto solo funcionará si tienes un servidor manejando esta lógica
-  createContrato(contrato: any): Observable<any> {
-    // Para actualizar un archivo local, necesitas un backend que maneje la escritura al archivo JSON.
+  // Insertar contrato
+  createContrato(contrato: NuevoContrato): Observable<object> {
     return this.http.post(this.filePath, contrato);
   }
 
-  // Obtener todos los contratos desde el archivo JSON
-  getAllContratos(): Observable<any> {
-    return this.http.get<any[]>(this.filePath);
+  getAllContratos(): Observable<Contrato[]> {
+    return this.http.get<Contrato[]>(this.filePath); // Devuelve todo, incluyendo `id`
   }
 
-  // Obtener un contrato por ID (esto podría necesitar ajustes dependiendo de cómo esté estructurado tu archivo JSON)
-  getContratoById(id: number): Observable<any> {
-    return this.http.get<any>(`${this.filePath}/${id}`);
+  // Obtener un contrato por ID
+  getContratoById(id: string): Observable<Contrato> {
+    console.log("id antes de traer la información ", id);
+    return this.http.get<Contrato>(`${this.filePath}/${id}`);
   }
 }

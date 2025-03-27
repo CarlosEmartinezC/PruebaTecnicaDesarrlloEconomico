@@ -12,6 +12,12 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+Prueba que tiene como resultado el insertar un valor de un formulario expecifico, en la siguiente parte tiene que poder visualizar todos los contrados ingresados hasta el momento y en la parte final poder visualizar los datos del contrato que se leccione en ver:
+
+![image](https://github.com/user-attachments/assets/b0be1ac3-d081-47da-8724-16ed5f4971a3)
+
+
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
